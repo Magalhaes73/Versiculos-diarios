@@ -8,17 +8,7 @@
 int i;
 char vers[100][200];
 char resposta;
-
-void repeticao() {
-    i = rand() % 54;
-    printf("Versiculo do dia:\n%s\n", vers[i]);
-    printf("\nGostaria de outro versiculo? (Y/N): ");
-    scanf(" %s", &resposta);
-}
-int main() {
-    SetConsoleOutputCP(CP_UTF8);
-    srand(time(NULL));
-    { /*Versiculos*/
+void versiculos(){
         strcpy(vers[0], "A mulher virtuosa é a coroa do seu marido; porém a que procede vergonhosamente é como apodrecimento nos seus ossos\n- Pv 12:4");
         strcpy(vers[1], "Toda mulher sábia edifica a sua casa; a insensata, porém, derruba-a com as suas mãos\n- Pv 14:1");
         strcpy(vers[2], "Quem encontra uma esposa acha uma coisa boa; e alcança o favor do Senhor\n- Pv 18:22");
@@ -119,7 +109,19 @@ int main() {
         strcpy(vers[97], "");
         strcpy(vers[98], "");
         strcpy(vers[99], "");
-    }
+}
+
+void repeticao() {
+    i = rand() % 54;
+    printf("Versiculo do dia:\n%s\n", vers[i]);
+    printf("\nGostaria de outro versiculo? (Y/N): ");
+    scanf("%s", &resposta);
+}
+
+int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    srand(time(NULL));
+    versiculos();
     printf("\nGostaria de um versiculo? (Y/N): ");
     scanf(" %s", &resposta);
     if (resposta != 'Y' && resposta != 'y') 
