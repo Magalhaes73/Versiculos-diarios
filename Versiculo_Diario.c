@@ -10,7 +10,7 @@ char vers[100][200];
 char resposta;
 
 void repeticao() {
-    i = rand() % 52;
+    i = rand() % 54;
     printf("Versiculo do dia:\n%s\n", vers[i]);
     printf("\nGostaria de outro versiculo? (Y/N): ");
     scanf(" %s", &resposta);
@@ -70,8 +70,9 @@ int main() {
         strcpy(vers[48], "A mulher virtuosa é a coroa do seu marido; porém a que procede vergonhosamente é como apodrecimento nos seus ossos\n- Pv 12:4");
         strcpy(vers[49], "Saberás, pois, no teu coração que, como um homem corrige a seu filho, assim te corrige o Senhor teu Deus\n- Dt 8:5");
         strcpy(vers[50], "Como as nações que o Senhor vem destruindo diante de vós, assim vós perecereis, por não quererdes ouvir a voz do Senhor vosso Deus\n- Dt 8:20");
-        strcpy(vers[51], "Saibam todos que eu, somente eu, sou Deus; não há outro deus além de mim. Eu mato e eu faço viver; eu firo e eu curo. Ninguém pode me impedir de fazer o que quero\n- Dt 32:39");        strcpy(vers[52], "");
-        strcpy(vers[53], "");
+        strcpy(vers[51], "Saibam todos que eu, somente eu, sou Deus; não há outro deus além de mim. Eu mato e eu faço viver; eu firo e eu curo. Ninguém pode me impedir de fazer o que quero\n- Dt 32:39");        
+        strcpy(vers[52], "— Não fiquem com medo! — respondeu Samuel. — Embora vocês tenham feito uma coisa tão má, não deixem de adorar o Senhor, nosso Deus, mas sirvam a ele com todo o coração.\n- 1Sm 12:20");
+        strcpy(vers[53], "O pecado entrou no mundo por meio de um só homem, e o seu pecado trouxe consigo a morte. Como resultado, a morte se espalhou por toda a raça humana porque todos pecaram\n- Rm 5:12");
         strcpy(vers[54], "");
         strcpy(vers[55], "");
         strcpy(vers[56], "");
