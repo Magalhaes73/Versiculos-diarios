@@ -63,9 +63,9 @@ void versiculos(){
         strcpy(vers[51], "Saibam todos que eu, somente eu, sou Deus; não há outro deus além de mim. Eu mato e eu faço viver; eu firo e eu curo. Ninguém pode me impedir de fazer o que quero\n- Dt 32:39");        
         strcpy(vers[52], "— Não fiquem com medo! — respondeu Samuel. — Embora vocês tenham feito uma coisa tão má, não deixem de adorar o Senhor, nosso Deus, mas sirvam a ele com todo o coração.\n- 1Sm 12:20");
         strcpy(vers[53], "O pecado entrou no mundo por meio de um só homem, e o seu pecado trouxe consigo a morte. Como resultado, a morte se espalhou por toda a raça humana porque todos pecaram\n- Rm 5:12");
-        strcpy(vers[54], "");
-        strcpy(vers[55], "");
-        strcpy(vers[56], "");
+        strcpy(vers[54], "Tu és puro para os que são puros, mas és inimigo dos que são maus\n- 2Sm 22:27");
+        strcpy(vers[55], "Tu salvas os humildes, mas humilhas os orgulhosos\n- 2Sm 22:28");
+        strcpy(vers[56], "Mas os pagãos são como os espinhos jogados fora: ninguém se atreve a pegá-los com as mãos; para isso é preciso uma ferramenta de ferro ou de madeira; eles serão totalmente queimados no fogo.\n- 2Sm 23:6-7");
         strcpy(vers[57], "");
         strcpy(vers[58], "");
         strcpy(vers[59], "");
@@ -112,24 +112,23 @@ void versiculos(){
 }
 
 void repeticao() {
-    i = rand() % 54;
+    i = rand() % 57;
     printf("Versiculo do dia:\n%s\n", vers[i]);
     printf("\nGostaria de outro versiculo? (Y/N): ");
     scanf("%s", &resposta);
 }
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8); //juntamento com a biblioteca #include <windows.h>, esse comando permite acentos
     srand(time(NULL));
     versiculos();
     printf("\nGostaria de um versiculo? (Y/N): ");
-    scanf(" %s", &resposta);
-    if (resposta != 'Y' && resposta != 'y') 
-        return 0;
+    scanf("%s", &resposta);
+    if (resposta != 'Y' && resposta != 'y') return 0;
 
-    do {
+    do
         repeticao();
-    } while (resposta == 'Y' || resposta == 'y');
+    while (resposta == 'Y' || resposta == 'y');
 
     return 0;
 }
