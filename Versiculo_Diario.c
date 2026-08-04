@@ -129,6 +129,5 @@ int main() {
     do
         repeticao();
     while (resposta == 'Y' || resposta == 'y');
-
     return 0;
 }
