@@ -66,10 +66,10 @@ void versiculos(){
         strcpy(vers[54], "Tu és puro para os que são puros, mas és inimigo dos que são maus\n- 2Sm 22:27");
         strcpy(vers[55], "Tu salvas os humildes, mas humilhas os orgulhosos\n- 2Sm 22:28");
         strcpy(vers[56], "Mas os pagãos são como os espinhos jogados fora: ninguém se atreve a pegá-los com as mãos; para isso é preciso uma ferramenta de ferro ou de madeira; eles serão totalmente queimados no fogo.\n- 2Sm 23:6-7");
-        strcpy(vers[57], "");
-        strcpy(vers[58], "");
-        strcpy(vers[59], "");
-        strcpy(vers[60], "");
+        strcpy(vers[57], " Aí disse assim: — Nasci nu, sem nada, e sem nada vou morrer. O SENHOR deu, o SENHOR tirou; louvado seja o seu nome!\n- Jó 1:21");
+        strcpy(vers[58], "Feliz é aquele a quem Deus corrige! Por isso, não despreze o castigo do Deus Todo-Poderoso.\n- Jó 5:17");
+        strcpy(vers[59], "Se você voltar para o Todo-Poderoso e se humilhar, se você acabar com a maldade que há na sua casa, se o ouro mais precioso não tiver valor para você e for como o pó ou as pedrinhas do ribeirão, então o Todo-Poderoso será o seu ouro puro, será a sua prata mais preciosa.\n- Jó 22:23-25");
+        strcpy(vers[60], "porque tu, ó Deus, me proteges do poder da morte. Eu tenho te servido fielmente, e por isso não deixarás que eu desça ao mundo dos mortos.\n- Sl 16:10");
         strcpy(vers[61], "");
         strcpy(vers[62], "");
         strcpy(vers[63], "");
@@ -112,7 +112,7 @@ void versiculos(){
 }
 
 void repeticao() {
-    i = rand() % 57;
+    i = rand() % 61;
     printf("Versiculo do dia:\n%s\n", vers[i]);
     printf("\nGostaria de outro versiculo? (Y/N): ");
     scanf("%s", &resposta);
